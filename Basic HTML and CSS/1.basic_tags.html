@@ -1,0 +1,268 @@
+<!-- Our HTML code starts here -->
+<DOCTYPE html>
+<html lang = "en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<hr>
+        <title>Document</title>
+    </head>
+    <title>BASIC HTML TAGS</title>
+
+    <!-- How to add external CSS-->
+
+    <link rel="stylesheet" href="external.css">
+    <body>
+        
+
+        <!-- If i want 5 paragraphs do p*5 -->
+         <!-- To add dummy text do Lorem10 for 10 words-->
+          <!-- Add em tag for italic font and add strong tag for bold font-->
+           <h2>USING EM AND STRONG TAG</h2>
+
+         <p>Lorem ipsum <strong>this is strong</strong> dolor sit <em>this is em</em></p>
+         
+         <p>Lorem ipsum dolor sit amet.</p>
+         
+         <p>Lorem ipsum dolor sit amet.</p>
+         
+         <p>Lorem ipsum dolor sit amet.</p>
+         
+         <p>Lorem ipsum dolor sit amet.</p>
+
+         <hr>
+         <h2>ADDING LINK</h2>
+
+         <!--Using target tag to open link in new tab-->
+         <a href = "https://youtu.be/z6H22xGAZEA" target="_"blank > open video</a>
+
+         <!-- Adding image -->
+          <!-- Image is not present hence alt text is shown-->
+
+           <h2>ADDING IMAGE</h2>
+
+          <img src ="pihoo.jpg" alt="Error , loading image">
+
+          <!--Image is present here-->
+          <img src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHRtbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt ="loading image">
+ 
+         <hr>
+
+          <!--using list tags-->
+          <h2> USING LIST TAG </h2>
+
+          <ul type="square">
+
+            <!-- Add type="" for however serial number we want-->
+
+            <h1> Favourite colours</h1>
+
+            <li>lilac</li>
+            <li>matcha green</li>
+            <li>more greens
+                <ul>
+                    <li>lima green</li>      <!--for adding nested list ie. list ke andar list-->
+                    <li>sea green</li>
+                </ul>
+            </li>
+          </ul>
+          <hr>
+          <ol type="i">
+
+            <h1>Hated colours</h1>
+
+            <li>yellowgreen</li>
+            <li>neon</li>
+            <li>hot pink</li>
+          </ol>
+
+          <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+
+          <hr>
+          <!--Tables Tag start here-->
+          <h2>HTML Table</h2>
+
+          <table>
+
+            <thead>
+                <tr>
+                    <th>Serial no</th>
+                    <th>Name</th>
+                    <th>Place</th>
+                    <th>Age</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+
+                <td>1</td>
+                <td>Pihoo</td>
+                <td>Jhansi</td>
+                <td>18</td>
+
+                </tr>
+                <tr>
+
+                    <td>2</td>
+                    <td>Khushi</td>
+                    <td>Jamshedpur</td>
+                    <td>21</td>
+
+                </tr>
+                <tr>
+
+                    <td>3</td>
+                    <td>Sia</td>
+                    <td>Aayodhya</td>
+                    <td>19</td>
+
+                </tr>
+                <tr>
+
+                    <td>4</td>
+                    <td>Naina</td>
+                    <td>Delhi</td>
+                    <td>22</td>
+
+                </tr>
+
+            </tbody>
+
+          </table>
+          <hr>
+
+          <!-- Form tags-->
+           <h2>FORM TAG and INPUTS</h2>
+           <form action = "backend.php">    <!-- Backend.php is used so that the computer brain decides what to do with the data-->
+
+           <!--we are using 'name' here for the backend-->
+
+            Name: <input type="text" placeholder="Enter your name" name="yourname"><br>
+            Password: <input type="password" placeholder="Enter your password" password="yourpassword" required><br>
+            Ph number: <input type="number" placeholder = "Enter your number" number="yournumber">
+
+            <!-- We can also us div tag instead of br tag-->
+
+             <div>
+                 Profession: <input type="text" placeholder="Enter your profession" name="yourprofession">
+             </div>
+             <div>
+                email: <input type="text" placeholder="Enter you email id" name="youremail">
+             </div>
+             <div>
+                date: <input type="date" name="yourdate">
+             </div>
+             <div>
+                time: <input type="time" name="yourtime">
+             </div>
+             <div>
+                Bonus:<input type="number" name="mybonus">
+             </div>
+             <div>
+             <!--Write "checked" if we want the check box to be checked by defaullt-->
+                Are you eligible?:<input type="checkbox" name="myeligibility" checked >
+             </div>
+             <div>
+                <!-- idhar name same rakha isliye kisi ek ko hi select kar payenge-->
+                Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> other <input type="radio" name="mygender">
+             </div>
+             <div>
+              Write about yourself: <textarea name="mytext" cols="30" rows="10"></textarea>
+             </div>
+             <div>
+
+                <!--LABEL AND ID-->
+
+             <!--If we want ki hum College name par click karein and cursor college name ke box mein aa jaye -->
+             <label for="College name"> College name: </label>
+             <input type="text" id="College name">    <!--id wahi honi chaiye jo for ke ander di hai-->
+             </div>
+
+             <!--SELECT-->
+             <div>
+             <label for="Car">Car:</label>
+             <select name="Car" id="car">
+                <option value="swift">swift</option>
+                <option value="indica">indica</option>
+                <option value="toy car">toy car</option>
+             </select>
+             </div>
+        
+             <input type="submit" value ="Submit">
+             <input type="reset"  value ="Reset">
+
+        </form>
+        <hr>
+        <h2>using p and span</h2>
+
+        <!--INLINE AND BLOCK ELEMENTS-->
+        <!--Jo poori jagah le le vo block element hai and jo sirf apni jagah le vo inline hai-->
+        <h3>INLINE AND BLOCK ELEMENTS</h3>
+        <p style="border: 5px solid red;"> this is a paragraph </p><p style="border: 5px solid peru;"> this is also a paragraph</p>
+
+       <!--now using span instead of p-->
+
+       <span style="border: 5px solid red;"> this is a span </span><span style="border: 5px solid peru;"> this is also a </span>
+<hr>
+         <!--IDs AND CLASSES-->
+         <!--class is used to style a stylesheet , one style rule controlling many elements at once-->
+         
+         <h3>IDs AND CLASSES</h3>
+
+         <div id ="mainbox" class="redbg blackborder">
+            this is mainbox
+         </div>
+         <span class="redbg"></span>
+        <!-- Select and press ctrl+/ to comment -->
+        <!-- Emmet -->
+        <!-- . is for class and # is for id --> 
+         <span class ="redbg"></span>
+         <span id ="mainspan"></span>
+         <div class="redbg blackBorder anotherClass"></div>
+
+         <!-- Emmit takes div tag as default -->
+          <div class="blackBackground"></div>
+          <hr>
+
+          <!-- HTML entities start here  -->
+           <!-- html ki reserved characters ko print karne ke liye html entities use hoti hai -->
+          <h3>HTML entities</h3>
+
+          <div class="container">
+            <p>this is a paragraph</p> 
+          </div>
+          <div class="container">
+            <!-- we write &nbsp; for space -->
+            <p>this is another &nbsp;paragraph</p>
+            <!-- toh computer <p> ko print to karega nahi aund agar hum chate hai ki print kare toh do this -->
+            <p>paragraph is  written like this &lt; p &gt; </p>
+            <p>pound is written like this &pound; </p>
+            <p>copyright is written as &copy;</p>
+            <p>another character is written like this &frac14;</p>
+          </div>
+          <hr>
+
+          <!-- SEMANTIC TAGS -->
+          <h1>SEMANTIC TAGS</h1>
+
+          <details>
+      <summary>Epcot Center</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+      </details>
+
+
+
+    </body>
+    
+    </html>
+</html>

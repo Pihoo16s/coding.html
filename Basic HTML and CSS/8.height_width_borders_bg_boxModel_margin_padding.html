@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEIGHT,WIDTH,BORDER,BACKGROUND,BOX MODEL,MARGIN,PADDING</title>
+    <style>
+#firstpara{
+    background-color: aquamarine;
+    height: 100px;
+    width: 500px;
+    border:4px solid greenyellow;  /*writing it like this or the way mentioned below gives the same output*/
+    /* border-width: 4px;
+    border-color: greenyellow;
+    border-style: solid; */
+    border-radius:11px ;
+
+}
+#secondpara{
+     background-color: brown;
+     height: 100px;
+     width:400px;
+     border-top: 5px solid violet;
+     border-left: 7px solid pink;
+     border-right: 9px solid lightgreen;
+     border-bottom: 11px solid darkgreen;
+     border-top-left-radius: 10px;
+     border-bottom-right-radius: 20px;
+     border-bottom-left-radius: 35px;
+     border-top-right-radius: 45px;
+}
+#thirdpara{
+     height: 350px;
+     width:700px;
+     background-image: url('https://thumbs.dreamstime.com/b/water-splash-1844088.jpg');
+     border:2px solid black;
+     background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat on x and y axis*/
+     background-position: center;
+}
+.container{
+    background-color:rgb(154, 150, 185);
+    border: 3px solid rgb(86, 59, 112);
+    /* we can set margin and padding differently for top,bottom,left and rigth */
+
+    /* padding-left: 80px;
+    padding-right: 80px; 
+    padding-bottom: 80px;
+    padding-top: 80px; */
+
+    padding : 34px 19px ; /* padding /margin: top right bottom left */
+    margin: 14px 19px;
+    border-radius: 23px;
+    width:233px
+    /* '*' is ued when i want some feature to apply on all elements */
+}
+*{
+    box-sizing: border-box;
+    
+}
+   
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstpara">This is a paragarph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondpara">This is second a paragarph</p>
+
+    <h3>This is third paragraph</h3>
+   <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing.
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
+        Lorem ipsum, dolor sit amet consectetur adipisicing.
+        Lorem ipsum dolor sit, amet consectetur adipisicing.
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+
+    <div class="container">
+        <h3>Learn box model,margin and padding</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error non! Nisi, sed eum! Non, debitis ipsum harum mollitia aut ipsa nam dignissimos.</p></div>
+
+        <div class="container">
+        <h3>Learn box model,margin and padding</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error non! Nisi, sed eum! Non, debitis ipsum harum mollitia aut ipsa nam dignissimos.</p></div>
+
+        <div class="container">
+        <h3>Learn box model,margin and padding</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error non! Nisi, sed eum! Non, debitis ipsum harum mollitia aut ipsa nam dignissimos.</p></div>
+
+    </div>
+</body>
+</html>

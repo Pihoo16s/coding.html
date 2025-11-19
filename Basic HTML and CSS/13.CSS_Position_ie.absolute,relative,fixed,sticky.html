@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+       border:2px solid black;
+       background-color: khaki ;
+       height: 3500px;
+       
+    }
+
+    /* CSS Position:static(default),absolute,relative(we will be able to use top,bottom,left,right property),fixed,sticky */
+.box{
+    display: inline-block; /*we will be able to set its width and height , and by inline it will come in one line*/
+    border:2px solid red; 
+    width:150px;
+    height: 150px;
+    margin:2px;
+}
+
+#box3{
+    /* 1.position:static (by default) */
+
+    /* 2.position:positions the element (relative to its normal position and will leave a gap at its normal position) */
+
+    /* 3.position:absolute {positions the element relative to its first parent (in this case parent is container)position} */
+    /* top:34px;
+    left:34px; */
+
+    /*4.position: fixed(positions the elements relative to the browser window)
+    right:4px ; */
+    /* when i will scroll down,box 1,2,4 will move but not 3 as it is fixed */
+    /* bottom:2px;  is se dabba niiche aa gaya */
+
+    /* 5.position:sticky(box will move at first then stick later to the screen) */
+    position: sticky;
+    top:3px;
+   
+}
+</style>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1.</div>
+    <div class="box" id="box2">2.</div>
+    <div class="box" id="box3">Chat with us</div>
+    <div class="box" id="box4">4.</div>
+    </div>
+</body>
+</html>
